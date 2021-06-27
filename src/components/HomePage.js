@@ -6,7 +6,7 @@ import axios from "axios";
 
 const provider = getDefaultProvider("rinkeby", { alchemy: config.alchemyKey });
 const contract = new Contract(
-  "0x56F215598242252Bc6e8C3365446aF9b626CAdF7",
+  "0xFb4B52af10D35A2c4486B1D81Cf4069A122bB5D4",
   abi,
   provider
 );
@@ -74,7 +74,7 @@ export const HomePage = () => {
 
     // Create the contract instance
     const contract = new Contract(
-      "0x56F215598242252Bc6e8C3365446aF9b626CAdF7",
+      "0xFb4B52af10D35A2c4486B1D81Cf4069A122bB5D4",
       abi,
       signer
     );
