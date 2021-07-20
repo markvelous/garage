@@ -98,11 +98,11 @@ export const HomePage = () => {
           <div className="text-xl text-white">LOADING...</div>
         )}
         {mintedNftState.state === "SUCCESS" && (
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-3 gap-10">
             {mintedNftState.data.map(
               ({ id, image, name, description, owner }) => {
                 return (
-                  <div key={id} className="bg-white rounded p-2">
+                  <div key={id} className="bg-white rounded p-6 elevation-10">
                     <img src={image} className="mx-auto p-4" alt={name} />
                     <div className="text-xl">{name}</div>
                     <div className="">{description}</div>
@@ -119,7 +119,7 @@ export const HomePage = () => {
           <button
             onClick={handlePurchase}
             type="button"
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+            className="inline-flex items-center px-6 py-3 elevation-5 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gray-600 hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
           >
             I want one!
           </button>
